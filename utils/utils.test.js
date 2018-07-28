@@ -21,3 +21,11 @@ it('should test some random code', () => {
        age: 33
    });
 });
+
+it('should verify if first and last name are set', () => {
+    var res = utils.setName({}, 'Andres Orav');
+    expect(res).toInclude({
+        firstName: 'Andres',
+        lastName: 'Orav'
+    })
+});
