@@ -1,2 +1,2 @@
-# npm-tests
-NodeJS Course NPM tests
+# npm-test
+Testing NodeJS
