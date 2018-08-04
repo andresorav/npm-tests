@@ -23,9 +23,12 @@ it('should test some random code', () => {
 });
 
 it('should verify if first and last name are set', () => {
-    var res = utils.setName({}, 'Andres Orav');
+    var res = utils.setName({
+        location: 'Tallinn'
+    }, 'Andres Orav');
     expect(res).toInclude({
         firstName: 'Andres',
-        lastName: 'Orav'
+        lastName: 'Orav',
+        location: 'Tallinn'
     })
 });
